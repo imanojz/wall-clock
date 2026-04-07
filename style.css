@@ -1,0 +1,98 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+}
+
+.clock {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  position: relative;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Marks */
+.mark {
+  position: absolute;
+  width: 3px;
+  height: 14px;
+  background: rgba(255,255,255,0.4);
+  left: 50%;
+  top: 10px;
+  transform-origin: 50% 170px;
+  border-radius: 10px;
+}
+
+.mark.big {
+  height: 20px;
+  width: 4px;
+  background: rgba(255,255,255,0.9);
+}
+
+/* Hands */
+.hand {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.hour {
+  width: 8px;
+  height: 85px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.minute {
+  width: 5px;
+  height: 115px;
+  background: #cbd5e1;
+  border-radius: 20px;
+}
+
+.second {
+  width: 2px;
+  height: 130px;
+  background: #38bdf8;
+  border-radius: 20px;
+}
+
+/* Center */
+.center {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #38bdf8;
+}
+
+/* Digital */
+.digital {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e2e8f0;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .clock { width: 300px; height: 300px; }
+  .mark { transform-origin: 50% 140px; }
+}
