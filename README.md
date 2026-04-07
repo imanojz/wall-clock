@@ -18,7 +18,7 @@ This project focuses on clean UI, glassmorphism design, and smooth real-time upd
 
 ## 🖼️ Preview
 
-![Preview](https://via.placeholder.com/600x400?text=Clock+Preview)
+<img width="577" height="514" alt="image" src="https://github.com/user-attachments/assets/5ed1d748-8d88-4f9d-a848-0992bbdb9199" />
 
 ---
 
