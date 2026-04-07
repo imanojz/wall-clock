@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minimal Clock</title>
+
+<link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+
+<div class="clock">
+
+  <!-- 12 marks -->
+  <div class="mark big" style="transform: translateX(-50%) rotate(0deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(30deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(60deg);"></div>
+  <div class="mark big" style="transform: translateX(-50%) rotate(90deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(120deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(150deg);"></div>
+  <div class="mark big" style="transform: translateX(-50%) rotate(180deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(210deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(240deg);"></div>
+  <div class="mark big" style="transform: translateX(-50%) rotate(270deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(300deg);"></div>
+  <div class="mark" style="transform: translateX(-50%) rotate(330deg);"></div>
+
+  <!-- Hands -->
+  <div class="hand hour" id="hour"></div>
+  <div class="hand minute" id="minute"></div>
+  <div class="hand second" id="second"></div>
+
+  <div class="center"></div>
+
+  <!-- Digital -->
+  <div class="digital" id="digital">00:00:00</div>
+
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
